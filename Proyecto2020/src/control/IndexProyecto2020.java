@@ -12,7 +12,8 @@ public class IndexProyecto2020 {
 		Lectura in= new Lectura();
 		
 		try {
-			TemaDAO.insertarUnTema(in.leerTema());
+			//TemaDAO.insertarUnTemaSinAuto(in.leerTema());
+			TemaDAO.borradoBD(7);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
